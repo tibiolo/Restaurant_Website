@@ -1,4 +1,4 @@
-.button-87 {
+.button-order {
   margin: 10px;
   padding: 10px 20px;
   text-align: center;
@@ -18,13 +18,13 @@
   touch-action: manipulation;
 }
 
-.button-87:hover {
+.button-order:hover {
   background-position: right center;
   /* change the direction of the change here */
   color: #fff;
   text-decoration: none;
 }
 
-.button-87:active {
+.button-order:active {
   transform: scale(0.95);
 }
