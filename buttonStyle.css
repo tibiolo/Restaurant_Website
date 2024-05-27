@@ -1,4 +1,6 @@
-.button-order {
+/* Order Button */
+
+.button-main {
   margin: 10px;
   padding: 10px 20px;
   text-align: center;
@@ -10,6 +12,7 @@
   display: block;
   border: 0px;
   font-weight: 700;
+  letter-spacing: 0.02rem;
   box-shadow: 0px 0px 14px -7px #f09819;
   background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
   cursor: pointer;
@@ -18,13 +21,21 @@
   touch-action: manipulation;
 }
 
-.button-order:hover {
+.button-main:hover {
   background-position: right center;
   /* change the direction of the change here */
   color: #fff;
   text-decoration: none;
 }
 
-.button-order:active {
+.button-main:active {
   transform: scale(0.95);
 }
+
+.button_widthLimit {
+  min-width: 25%;
+}
+
+@media only screen and (max-width: 600px) {
+ }
+
