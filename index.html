@@ -1,27 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://unpkg.com/normalize.css">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="buttonStyle.css">
-  <title>Forno Felice</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/normalize.css" />
+    <link preload rel="stylesheet" href="style.css" />
+    <link preload rel="stylesheet" href="buttonStyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>Forno Felice</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="/" class="logo">Forno Felice</a>
+      <ul class="nav">
+        <li class="navItem">
+          <button class="button-main" role="button">Order</button>
+        </li>
+      </ul>
+    </header>
 
-  <header class="header">
-    <a href="/" class="logo">Forno Felice</a>
-    <ul class="nav">
-      <li class="navItem"><button class="button-main" role="button">Order</button></li>
-    </ul>
-  </header>
+    <section class="banner">
+      <div class="bannerIntro">
+        <h1 class="bannerIntroTitle">
+          Enjoy Our <span class="highlight">Finest Quality</span> Pizza!
+        </h1>
+        <button
+          class="button-main button_widthLimit button_NoUpperCase button_seeMenu"
+          role="button"
+        >
+          See Menu
+        </button>
+      </div>
+    </section>
 
-  <section class="banner">
-    <div class="bannerIntro">
-      <h1 class="bannerIntroTitle">Enjoy Our <span class="highlight">Finest Quality</span> Pizza!</h1>
-      <button class="button-main button_widthLimit" role="button">Menu</button>
+    <div class="menuTitleWrapper">
+      <h1>Our Menu</h1>
     </div>
-  </section>
-</body>
+
+    <section class="menu">
+      <div class="gridItem">
+        <img
+          src="./public/img/pizza_img/1692886360-margherita.avif"
+          alt="Pizza Margherita"
+          class="gridItemImg"
+        />
+        <div class="productDetails">
+          <div class="gridItemTextContainer">
+            <h3 class="productName">Margheritta</h3>
+            <p class="productPrice">£ 7.99</p>
+          </div>
+          <button class="icon-button" id="basketButton">
+            <i class="fas fa-shopping-basket"></i>
+          </button>
+        </div>
+      </div>
+      <div class="gridItem">
+        <img
+          src="./public/img/pizza_img/1692885348-double-pepperoni-and-spicy-honey.avif"
+          alt="Pizza Double-Pepperoni"
+          class="gridItemImg"
+        />
+        <div class="productDetails">
+          <div class="gridItemTextContainer">
+            <h3 class="productName">Double Pepperoni & Spicy Honey</h3>
+            <p class="productPrice">£ 15.99</p>
+          </div>
+          <button class="icon-button" id="basketButton">
+            <i class="fas fa-shopping-basket"></i>
+          </button>
+        </div>
+      </div>
+      <div class="gridItem">
+        <img
+          src="./public/img/pizza_img/1692884754-nduja.avif"
+          alt="Pizza Carbonara"
+          class="gridItemImg"
+        />
+        <div class="productDetails">
+          <div class="gridItemTextContainer">
+            <h3 class="productName">Nduja</h3>
+            <p class="productPrice">£ 9.99</p>
+          </div>
+          <button class="icon-button" id="basketButton">
+            <i class="fas fa-shopping-basket"></i>
+          </button>
+        </div>
+      </div>
+      <div class="gridItem">
+        <img
+          src="./public/img/pizza_img/1716381920-pizznlove.avif"
+          alt="Pizzanlove"
+          class="gridItemImg"
+        />
+        <div class="productDetails">
+          <div class="gridItemTextContainer">
+            <h3 class="productName">Pizza&Love</h3>
+            <p class="productPrice">£ 11.99</p>
+          </div>
+          <button class="icon-button" id="basketButton">
+            <i class="fas fa-shopping-basket"></i>
+          </button>
+        </div>
+      </div>
+      <div class="gridItem">
+        <img
+          src="./public/img/pizza_img/1716381899-8cheese.avif"
+          alt="Pizza 8 Cheese"
+          class="gridItemImg"
+        />
+        <div class="productDetails">
+          <div class="gridItemTextContainer">
+            <h3 class="productName">8Cheese</h3>
+            <p class="productPrice">£ 10.99</p>
+          </div>
+          <button class="icon-button" id="basketButton">
+            <i class="fas fa-shopping-basket"></i>
+          </button>
+        </div>
+      </div>
+      <div class="gridItem">
+        <img
+          src="./public/img/pizza_img/1692889090-buffala-margherita.avif"
+          alt="Buffala Margeherita"
+          class="gridItemImg"
+        />
+        <div class="productDetails">
+          <div class="gridItemTextContainer">
+            <h3 class="productName">Buffala Margeherita</h3>
+            <p class="productPrice">£ 12.99</p>
+          </div>
+          <button class="icon-button" id="basketButton">
+            <i class="fas fa-shopping-basket"></i>
+          </button>
+        </div>
+      </div>
+      <div class="gridItem">
+        <img
+          src="./public/img/pizza_img/1692885494-fiorentina.avif"
+          alt="Pizza Florentina"
+          class="gridItemImg"
+        />
+        <div class="productDetails">
+          <div class="gridItemTextContainer">
+            <h3 class="productName">Pizza Florentina</h3>
+            <p class="productPrice">£ 16.99</p>
+          </div>
+          <button class="icon-button" id="basketButton">
+            <i class="fas fa-shopping-basket"></i>
+          </button>
+        </div>
+      </div>
+      <div class="gridItem">
+        <img
+          src="./public/img/pizza_img/1713977302-smokey_aubergine_parm.avif"
+          alt="Smokey Aubergine Parm"
+          class="gridItemImg"
+        />
+        <div class="productDetails">
+          <div class="gridItemTextContainer">
+            <h3 class="productName">Smokey Aubergine Parm</h3>
+            <p class="productPrice">£ 14.99</p>
+          </div>
+          <button class="icon-button" id="basketButton">
+            <i class="fas fa-shopping-basket"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
 </html>

@@ -24,13 +24,13 @@ a {
 html,
 body {
   box-sizing: border-box;
-  width: 100vw;
-  max-width: 100vw;
+  width: 100%;
+  max-width: 100%;
   line-height: 1.5;
   font-size: 16px;
   margin: 0;
   padding: 0;
-  /* overflow: hidden; */
+  overflow-x: hidden;
 }
 
 body {
@@ -106,7 +106,58 @@ body {
   color: var(--orange);
 }
 
+/* Menu - Title */
+
+.menuTitleWrapper {
+  padding: 2rem;
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+  text-decoration-color: var(--orange);
+}
+
+
+/* Menu - Section */
+
+.menu {
+  width: 100%;
+  max-width: 100%;
+  padding: 0rem 5rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.gridItem {
+  outline: solid 0.1rem var(--orange);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.gridItemImg {
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+}
+
+.productDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gridItemTextContainer {
+  margin-left: 0.5rem;
+  line-height: 1;
+}
+
+
+
 @media only screen and (max-width: 600px) {
+
+  /* Banner */
   .banner {
     width: 100%;
     max-width: 100%;
@@ -133,4 +184,16 @@ body {
     font-size: 3rem;
     text-align: center;
   }
+
+  /* Menu */
+
+  .menu {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 1rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
 }

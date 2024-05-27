@@ -32,8 +32,33 @@
   transform: scale(0.95);
 }
 
-.button_widthLimit {
+.button_seeMenu {
+  font-size: larger;
+  text-transform: none;
   min-width: 25%;
+}
+
+
+/* Icon Button */
+
+.icon-button {
+  height: 40px;
+  background-color: var(--orange);
+  border: none;
+  padding: 0rem 0.7rem;
+  margin-left: 1rem;
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+.icon-button:hover {
+  background-color: #e69500; /* Darker orange */
 }
 
 @media only screen and (max-width: 600px) {
