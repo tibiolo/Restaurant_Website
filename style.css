@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
+:root {
+  --black: #000000;
+  --white: #fff;
+  --orange: #FFA500;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; /* Ensure all elements use border-box sizing */
+}
+
+li, a { list-style: none; text-decoration: none;}
+
+/* Page \/ */
+
+
+html,
+body {
+  box-sizing: border-box;
+  width: 100vw;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: var(--white);
+  background-color: var(--black);
+}
+
+/* Header */
+
+.header, .nav {
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  justify-content: space-between;
+  width: 100%;
+  height: 7vh;
+  background-color: rgba(0,0,0,0.70);
+  padding: 0.5rem;
+}
+
+.logo {
+  color: var(--white);
+  font-family: "Italiana", sans-serif;
+  font-weight: 600;
+  font-size: xx-large;
+  letter-spacing: 0.15rem;
+}
+
+.nav {
+}
+
+.navItem {
+}
+
+/* Banner */
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  background-image: url(./public/img/background_banner1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .banner {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./public/img/mobile_background_banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
