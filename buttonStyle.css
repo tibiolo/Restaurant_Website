@@ -23,7 +23,6 @@
 
 .button-main:hover {
   background-position: right center;
-  /* change the direction of the change here */
   color: #fff;
   text-decoration: none;
 }
@@ -42,23 +41,20 @@
 /* Icon Button */
 
 .icon-button {
-  height: 40px;
-  background-color: var(--orange);
+  background: none;
   border: none;
-  padding: 0rem 0.7rem;
-  margin-left: 1rem;
-  color: white;
-  font-size: 1rem;
-  border-radius: 5px;
+  color: var(--orange);
+  font-size: 1.5rem;
   cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  transition: background-color 0.3s;
+  text-align: end;
 }
 
-.icon-button:hover {
-  background-color: #e69500; /* Darker orange */
+.icon-button i {
+  transition: color 0.3s;
+}
+
+.icon-button:hover i {
+  color: var(--white);
 }
 
 @media only screen and (max-width: 600px) {

@@ -65,12 +65,6 @@ body {
   letter-spacing: 0.15rem;
 }
 
-.nav {
-}
-
-.navItem {
-}
-
 /* Banner */
 
 .banner {
@@ -91,16 +85,16 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items:center;
+  align-items: center;
 }
 
 .bannerIntroTitle {
   width: 100%;
+  padding-inline: 1rem;
   font-family: "Italiana", sans-serif;
   font-size: 3rem;
   text-align: center;
 }
-
 
 .highlight {
   color: var(--orange);
@@ -116,47 +110,46 @@ body {
   text-decoration-color: var(--orange);
 }
 
-
 /* Menu - Section */
 
-.menu {
+.menu-grid-container {
   width: 100%;
   max-width: 100%;
-  padding: 0rem 5rem;
+  padding: 2rem;
   display: grid;
   gap: 2rem;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  box-sizing: border-box;
 }
 
-.gridItem {
+.grid-item {
   outline: solid 0.1rem var(--orange);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: grid;
+  grid-template-rows: auto 0.5fr;
   padding: 1rem;
   border-radius: 10px;
 }
 
-.gridItemImg {
-  border-radius: 10px 10px 0 0;
+.product-img {
   width: 100%;
+  height: auto;
 }
 
-.productDetails {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.product-details {
+
 }
 
-.gridItemTextContainer {
-  margin-left: 0.5rem;
-  line-height: 1;
+.product-price-button-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
+.product-price {
+  font-size: 1.15rem;
+}
 
 
 @media only screen and (max-width: 600px) {
-
   /* Banner */
   .banner {
     width: 100%;
@@ -187,13 +180,15 @@ body {
 
   /* Menu */
 
-  .menu {
-    width: 100%;
-    max-width: 100%;
-    padding: 0 1rem;
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(1, 1fr);
+  .menu-grid-container {
+    grid-template-columns: 1fr;
   }
-  
+}
+
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .menu-grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
 }
