@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./public/favicon.ico" />
     <link rel="stylesheet" href="https://unpkg.com/normalize.css" />
-    <link preload rel="stylesheet" href="style.css" />
-    <link preload rel="stylesheet" href="buttonStyle.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="buttonStyle.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -28,6 +29,7 @@
           Enjoy Our <span class="highlight">Finest Quality</span> Pizza!
         </h1>
         <button
+          id="seeMenuButton"
           class="button-main button_widthLimit button_NoUpperCase button_seeMenu"
           role="button"
         >
@@ -36,100 +38,107 @@
       </div>
     </section>
 
-    <div class="menuTitleWrapper">
+    <div id="menuSection" class="menuTitleWrapper hidden">
       <h1>Our Menu</h1>
     </div>
 
-    <section class="menu-grid-container">
+    <section  class="menu-grid-container hidden">
       <div class="grid-item">
-        <img src="./public/img/pizza_img/p1.avif" alt="" class="product-img">
+        <img src="./public/img/pizza_img/p1.avif" alt="" class="product-img" />
         <div class="product-details">
           <h3>Nduja</h3>
           <div class="product-price-button-container">
             <p class="product-price">£ 17.99</p>
-            <button class="icon-button" id="basketButton">
-      <i class="fas fa-shopping-basket"></i>
+            <button class="icon-button" id="basketButton1">
+              <i class="fas fa-shopping-basket"></i>
+            </button>
           </div>
         </div>
       </div>
       <div class="grid-item">
-        <img src="./public/img/pizza_img/p2.avif" alt="" class="product-img">
+        <img src="./public/img/pizza_img/p2.avif" alt="" class="product-img" />
         <div class="product-details">
           <h3>Pizza & Love</h3>
           <div class="product-price-button-container">
             <p class="product-price">£ 13.99</p>
-            <button class="icon-button" id="basketButton">
-      <i class="fas fa-shopping-basket"></i>
+            <button class="icon-button" id="basketButton2">
+              <i class="fas fa-shopping-basket"></i>
+            </button>
           </div>
         </div>
       </div>
       <div class="grid-item">
-        <img src="./public/img/pizza_img/p3.avif" alt="" class="product-img">
+        <img src="./public/img/pizza_img/p3.avif" alt="" class="product-img" />
         <div class="product-details">
           <h3>The 8 Cheese</h3>
           <div class="product-price-button-container">
             <p class="product-price">£ 11.99</p>
-            <button class="icon-button" id="basketButton">
-      <i class="fas fa-shopping-basket"></i>
+            <button class="icon-button" id="basketButton3">
+              <i class="fas fa-shopping-basket"></i>
+            </button>
           </div>
         </div>
       </div>
       <div class="grid-item">
-        <img src="./public/img/pizza_img/p4.avif" alt="" class="product-img">
+        <img src="./public/img/pizza_img/p4.avif" alt="" class="product-img" />
         <div class="product-details">
           <h3>Smokey Aubergine Parm</h3>
           <div class="product-price-button-container">
             <p class="product-price">£ 14.99</p>
-            <button class="icon-button" id="basketButton">
-      <i class="fas fa-shopping-basket"></i>
+            <button class="icon-button" id="basketButton4">
+              <i class="fas fa-shopping-basket"></i>
+            </button>
           </div>
         </div>
       </div>
       <div class="grid-item">
-        <img src="./public/img/pizza_img/p5.avif" alt="" class="product-img">
+        <img src="./public/img/pizza_img/p5.avif" alt="" class="product-img" />
         <div class="product-details">
-          <h3>Margherita  Extra</h3>
+          <h3>Margherita Extra</h3>
           <div class="product-price-button-container">
             <p class="product-price">£ 8.99</p>
-            <button class="icon-button" id="5">
-      <i class="fas fa-shopping-basket"></i>
+            <button class="icon-button" id="basketButton5">
+              <i class="fas fa-shopping-basket"></i>
+            </button>
           </div>
         </div>
       </div>
       <div class="grid-item">
-        <img src="./public/img/pizza_img/p6.avif" alt="" class="product-img">
+        <img src="./public/img/pizza_img/p6.avif" alt="" class="product-img" />
         <div class="product-details">
           <h3>Margherita</h3>
           <div class="product-price-button-container">
             <p class="product-price">£ 10.99</p>
-            <button class="icon-button" id="basketButton">
-      <i class="fas fa-shopping-basket"></i>
+            <button class="icon-button" id="basketButton6">
+              <i class="fas fa-shopping-basket"></i>
+            </button>
           </div>
         </div>
       </div>
       <div class="grid-item">
-        <img src="./public/img/pizza_img/p7.avif" alt="" class="product-img">
+        <img src="./public/img/pizza_img/p7.avif" alt="" class="product-img" />
         <div class="product-details">
           <h3>Margherita Extra Extra</h3>
           <div class="product-price-button-container">
             <p class="product-price">£ 9.99</p>
-            <button class="icon-button" id="basketButton">
-      <i class="fas fa-shopping-basket"></i>
+            <button class="icon-button" id="basketButton7">
+              <i class="fas fa-shopping-basket"></i>
+            </button>
           </div>
         </div>
       </div>
       <div class="grid-item">
-        <img src="./public/img/pizza_img/p8.avif" alt="" class="product-img">
+        <img src="./public/img/pizza_img/p8.avif" alt="" class="product-img" />
         <div class="product-details">
           <h3>Fiorentina</h3>
           <div class="product-price-button-container">
             <p class="product-price">£ 12.99</p>
-            <button class="icon-button" id="basketButton">
-      <i class="fas fa-shopping-basket"></i>
+            <button class="icon-button" id="basketButton8">
+              <i class="fas fa-shopping-basket"></i>
+            </button>
           </div>
         </div>
       </div>
-      
     </section>
     <script src="script.js"></script>
   </body>

@@ -181,7 +181,7 @@ body {
   /* Menu */
 
   .menu-grid-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -191,4 +191,16 @@ body {
     grid-template-columns: repeat(3, 1fr);
   }
 
+}
+
+
+.hidden {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
 }
