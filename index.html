@@ -11,6 +11,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <title>Forno Felice</title>
   </head>
   <body>
@@ -38,11 +39,11 @@
       </div>
     </section>
 
-    <div id="menuSection" class="menuTitleWrapper hidden">
+    <div id="menuSection" class="sectionTitleWrapper hidden">
       <h1>Our Menu</h1>
     </div>
 
-    <section  class="menu-grid-container hidden">
+    <section class="menu-grid-container hidden">
       <div class="grid-item">
         <img src="./public/img/pizza_img/p1.avif" alt="" class="product-img" />
         <div class="product-details">
@@ -140,6 +141,35 @@
         </div>
       </div>
     </section>
+
+    <div class="sectionTitleWrapper hidden">
+      <h1>Reviews</h1>
+    </div>
+
+    <section class="reviewsSection">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slideStyle"><div class="innerSlide"><div class="imgAndRating centered"><img src="./public/img/user_img/userimg1.jpg" alt="" class="swiperimg"><span class="fa fa-star checked "></span>
+            <span class="fa fa-star checked "></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span></div><h3 class="swiperText">"Best Pizzeria in London... this place feels like you've been transported to NY. Very underrated, but truly the best value and most authentic pizzeria in London."</h3><br><h3 class="reviewerName">~ Stacy</h3></div></div>
+          <div class="swiper-slide slideStyle"><div class="innerSlide"><div class="imageAndRating centered"><img src="./public/img/user_img/userimg2.jpg" alt="" class="swiperimg"><span class="fa fa-star checked "></span>
+            <span class="fa fa-star checked "></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star "></span></div><h3 class="swiperText">"This is the best pizza in London, dare I say, the world! Its the most underrated pizzeria and needs to get more attention. The quality and the price is unbeatable."</h3><br><h3 class="reviewerName">~ Kate</h3></div></div>
+          <div class="swiper-slide slideStyle"><div class="innerSlide"><div class="imageAndRating  centered"><img src="./public/img/user_img/userimg3.jpg" alt="" class="swiperimg"><span class="fa fa-star checked "></span>
+            <span class="fa fa-star checked "></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></div><h3 class="swiperText">"Got my vegan pizza via Deliveroo and it is absolutely the tastiest pizza I have ever eaten. So so so incredibly GOOD!!! Going to be going back again and again..."</h3><br><h3 class="reviewerName">~ John</h3></div></div>
+          <!-- Add more reviews as swiper-slides -->
+        </div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

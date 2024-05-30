@@ -1,4 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // Swiper initialization
+  var swiper = new Swiper('.swiper-container', {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+  });
+
   const buttons = document.querySelectorAll(".icon-button");
 
   buttons.forEach((button) => {
@@ -37,5 +47,4 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener('scroll', fadeInOnScroll);
   // Trigger fade-in on page load
   fadeInOnScroll();
-
 });
