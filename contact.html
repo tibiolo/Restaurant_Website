@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./public/favicon.ico" />
+    <link rel="stylesheet" href="./public/css/style.css" />
+    <link rel="stylesheet" href="./public/css/buttonStyle.css" />
+    <link rel="stylesheet" href="./public/css/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>Forno Felice</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="/" class="logo">Forno Felice</a>
+      <ul class="nav">
+        <li class="navItem">
+          <button class="button-main" role="button">Order</button>
+        </li>
+      </ul>
+    </header>
+
+    <section class="contact_form_container">
+      <form class="contact_form" action="submit_form.php" method="POST">
+        <h2>Contact Us</h2>
+        <div class="form-group">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+        </div>
+        <div class="form-group">
+            <label for="subject">Subject:</label><br>
+            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5" placeholder="Message" required></textarea>
+        </div>
+        <button class="button-main form-button" type="submit">Submit</button>
+    </form>
+    </section>
+
+    <footer class="footer">
+      <ul class="footer-nav">
+        <li>
+          <i class="fa-solid fa-angle-right footer-arrow"></i
+          ><a href="./contact.html">Contact Us</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-angle-right footer-arrow"></i
+          ><a href="./findus.html">Find Us</a>
+        </li>
+        <li class="no-underline">
+          <i class="fa-solid fa-angle-right footer-arrow"></i>
+          <a href="https://www.instagram.com/"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://www.facebook.com"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="https://x.com/"><i class="fa-brands fa-twitter"></i></a>
+        </li>
+      </ul>
+      <p class="copyright">© 2024 Forno Felice. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
