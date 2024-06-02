@@ -266,10 +266,14 @@ body {
   text-decoration: underline;
   text-underline-offset: 0.3rem;
   text-decoration-color: var(--orange);
+  text-align: center;
 }
 
 .footer-nav li i {
   padding-inline: 0.5rem;
+}
+
+.footer-arrow {
   color: var(--orange);
 }
 
@@ -319,10 +323,6 @@ body {
 
   .footer-nav li {
     padding: 1rem;
-  }
-
-  .footer-nav li i {
-    color: var(--orange);
   }
 
 }
