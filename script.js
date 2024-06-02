@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   });
 
+  // Add to basket button functionality
   const buttons = document.querySelectorAll(".icon-button");
 
   buttons.forEach((button) => {
@@ -24,6 +25,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  // Scroll to menu button and smooth scroll animation
+
   const seeMenuButton = document.getElementById("seeMenuButton");
   const menuSection = document.getElementById("menuSection");
 
@@ -31,20 +34,25 @@ document.addEventListener("DOMContentLoaded", () => {
     menuSection.scrollIntoView({ behavior: "smooth" });
   });
 
+  // Fade in on scroll
+
   const elementsToFadeIn = document.querySelectorAll('.hidden');
 
-  const fadeInOnScroll = () => {
-    elementsToFadeIn.forEach(element => {
-      const elementPosition = element.getBoundingClientRect().top;
-      const viewportHeight = window.innerHeight;
+    const fadeInOnScroll = () => {
+      elementsToFadeIn.forEach(element => {
+        const elementPosition = element.getBoundingClientRect().top;
+        const viewportHeight = window.innerHeight;
 
-      if (elementPosition < viewportHeight - 50) {
-        element.classList.add('fade-in');
-      }
-    });
-  };
+        if (elementPosition < viewportHeight - 50) {
+          element.classList.add('fade-in');
+        } else {
+          element.classList.remove('fade-in');
+        }
+      });
+    };
 
-  window.addEventListener('scroll', fadeInOnScroll);
-  // Trigger fade-in on page load
-  fadeInOnScroll();
-});
+    window.addEventListener('scroll', fadeInOnScroll);
+    
+    // Trigger fade-in function on page load
+    fadeInOnScroll();
+});                   
