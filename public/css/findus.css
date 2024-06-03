@@ -1,7 +1,7 @@
 body {
   min-height: 100vh;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)),
-    url("/public/img/background_banner.jpg");
+    url("../img/background_banner.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
