@@ -159,9 +159,6 @@ body {
   height: auto;
 }
 
-.product-details {
-
-}
 
 .product-price-button-container {
   display: grid;
@@ -221,9 +218,6 @@ body {
 .swiperText {
   padding-inline: 1rem;
   margin-bottom: 5px;
-}
-
-.imgAndRating {
 }
 
 .checked {
