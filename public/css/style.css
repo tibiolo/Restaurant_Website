@@ -10,9 +10,8 @@
 *,
 *::before,
 *::after {
-  box-sizing: inherit; 
+  box-sizing: inherit;
 }
-
 
 li,
 a {
@@ -20,7 +19,6 @@ a {
   text-decoration: none;
   color: var(--white);
 }
-
 
 /* Element Hide and Facde Styles */
 
@@ -83,7 +81,7 @@ body {
   width: 100%;
   max-width: 100%;
   height: 7vh;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: var(--black);
   padding: 0.5rem;
   z-index: 100;
 }
@@ -159,7 +157,6 @@ body {
   height: auto;
 }
 
-
 .product-price-button-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -186,7 +183,7 @@ body {
 }
 
 .swiper-container {
-  width: 100%; 
+  width: 100%;
   max-width: 100%;
   height: auto;
 }
@@ -203,7 +200,7 @@ body {
 
 .innerSlide {
   outline: solid 0.1rem var(--orange) !important;
-  border-radius: 10px; 
+  border-radius: 10px;
   width: 50%;
   max-width: 50%;
   height: auto;
@@ -279,13 +276,16 @@ body {
 .copyright {
   color: var(--white);
   text-align: center;
-} 
+}
 
 @media only screen and (max-width: 600px) {
   /* Banner */
   .banner {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)),
-      url(./public/img/mobile_background_banner.jpg);
+      url(/public/img/mobile_background_banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   .bannerIntro {
@@ -304,7 +304,6 @@ body {
   .menu-grid-container {
     grid-template-columns: 1fr;
   }
-
 
   /* Reviews */
 
@@ -331,14 +330,10 @@ body {
   .footer-nav li {
     padding: 1rem;
   }
-
 }
-
 
 @media (min-width: 600px) and (max-width: 900px) {
   .menu-grid-container {
     grid-template-columns: repeat(3, 1fr);
   }
-
 }
-

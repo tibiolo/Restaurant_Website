@@ -22,7 +22,7 @@ body {
   max-width: 600px;
   padding: 2rem;
   border-radius: 1rem;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.7);
   box-sizing: border-box;
 }
 
