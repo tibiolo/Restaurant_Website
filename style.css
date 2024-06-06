@@ -278,6 +278,25 @@ body {
   text-align: center;
 }
 
+/* Video */
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.video-container iframe {
+  aspect-ratio: 16/9;
+  width: 50%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+
+
 @media only screen and (max-width: 600px) {
   /* Banner */
   .banner {
@@ -312,6 +331,14 @@ body {
     max-width: 100%;
   }
 
+  /* video */
+
+
+  .video-container iframe {
+    width: 90%;
+    border-radius: 1rem;
+  }
+
   /* footer */
 
   .footer {
@@ -330,6 +357,8 @@ body {
   .footer-nav li {
     padding: 1rem;
   }
+
+  
 }
 
 @media (min-width: 600px) and (max-width: 900px) {
