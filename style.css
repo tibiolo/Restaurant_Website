@@ -288,10 +288,11 @@ body {
   height: auto;
 }
 
+
 .video-container iframe {
   aspect-ratio: 16/9;
   width: 50%;
-  height: auto;
+  height: 50%;
   border-radius: 1rem;
 }
 
@@ -335,6 +336,8 @@ body {
 
 
   .video-container iframe {
+    margin-left: auto;
+    margin-right: auto;
     width: 90%;
     border-radius: 1rem;
   }
