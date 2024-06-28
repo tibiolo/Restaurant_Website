@@ -87,6 +87,7 @@ body {
 }
 
 .logo {
+  margin-left: 1rem;
   color: var(--white);
   font-weight: 600;
   font-size: xx-large;
